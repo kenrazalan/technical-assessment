@@ -176,13 +176,13 @@ frontend/
 
 ## Submission Checklist
 
-- [ ] All features implemented
-- [ ] Tests passing
-- [ ] Performance optimized
-- [ ] Documentation complete
-- [ ] Code linting clean
-- [ ] Responsive design working
-- [ ] Dark/light mode working
+- [/] All features implemented
+- [/] Tests passing
+- [/] Performance optimized
+- [/] Documentation complete
+- [/] Code linting clean
+- [/] Responsive design working
+- [/] Dark/light mode working
 
 ## Notes
 
@@ -191,3 +191,132 @@ frontend/
 - No backend integration needed
 - Focus on frontend implementation
 - Document any assumptions made
+
+---
+
+# Project Documentation
+
+## Project Overview
+A real-time metrics dashboard built with Next.js, React Query, and Tailwind CSS. The dashboard displays system status updates and metrics in a clean, responsive interface.
+
+## Features
+- Real-time status updates with color-coded indicators
+- Interactive metrics chart with time-series data
+- Responsive design for all screen sizes
+- Dark mode support
+- Error handling and loading states
+- Type-safe with TypeScript
+
+## Tech Stack
+- **Framework**: Next.js 14
+- **State Management**: React Query
+- **Styling**: Tailwind CSS
+- **Charts**: Recharts
+- **Type Safety**: TypeScript
+- **Testing**: Jest + React Testing Library
+
+## Project Structure
+```
+frontend/
+├── app/                 # Next.js app directory
+├── components/         # React components
+│   ├── Dashboard.tsx   # Main dashboard layout
+│   ├── DataGrid.tsx    # Status updates table
+│   ├── MetricsChart.tsx # Metrics visualization
+│   └── Loading.tsx     # Loading component
+├── lib/               # Utility functions
+│   ├── utils.ts       # General utilities
+│   └── helpers.ts     # Dashboard-specific helpers
+├── types/             # TypeScript type definitions
+├── tests/             # Test files
+└── api/               # API integration
+```
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
+
+### Development
+Run the development server:
+```bash
+npm run dev
+```
+
+### Testing
+Run tests:
+```bash
+npm test
+```
+
+Run tests in watch mode:
+```bash
+npm run test:watch
+```
+
+Generate test coverage:
+```bash
+npm run test:coverage
+```
+
+### Building
+Build for production:
+```bash
+npm run build
+```
+
+Start production server:
+```bash
+npm start
+```
+
+## Component Documentation
+
+### Dashboard
+The main dashboard component that orchestrates the layout and data flow. It includes:
+- Status updates table
+- Metrics chart
+- Last updated timestamp
+- Responsive grid layout
+
+### DataGrid
+Displays system status updates in a table format:
+- Color-coded status indicators
+- Truncated messages
+- Formatted timestamps
+- Loading and error states
+
+### MetricsChart
+Visualizes metrics data using Recharts:
+- Line chart for time-series data
+- Interactive tooltips
+- Responsive container
+- Loading and error states
+
+
+## Testing
+The project uses Jest and React Testing Library for testing:
+- Component rendering tests
+- State management tests
+- Error handling tests
+- Loading state tests
+- API integration tests
+
+## Best Practices
+- Type safety with TypeScript
+- Component-based architecture
+- Responsive design
+- Error handling
+- Loading states
+- Code organization
+- Test coverage
+- Performance optimization
+
